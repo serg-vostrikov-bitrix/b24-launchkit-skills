@@ -43,8 +43,6 @@ scripts/
   install-local-skills.sh
   validate-skills.sh
   quick-validate-skill.py
-docs/
-  superpowers/
 ```
 
 The repository is the source of truth. The local Codex skills directory (`~/.codex/skills`) is only an install target for testing and real use.
