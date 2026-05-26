@@ -1,0 +1,4 @@
+interface:
+  display_name: "B24 Positioning"
+  short_description: "Turn Bitrix24 app facts into a safe positioning brief."
+  default_prompt: "Create a positioning brief for this Bitrix24 app from the provided manual or product notes."

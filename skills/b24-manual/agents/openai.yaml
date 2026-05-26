@@ -1,0 +1,4 @@
+interface:
+  display_name: "B24 Manual"
+  short_description: "Create factual user-facing manuals for Bitrix24 apps."
+  default_prompt: "Build a factual user-facing manual for this Bitrix24 app from the available project evidence."

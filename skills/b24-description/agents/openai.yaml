@@ -1,0 +1,4 @@
+interface:
+  display_name: "B24 Description"
+  short_description: "Write marketplace-ready public text for Bitrix24 apps."
+  default_prompt: "Write a marketplace-ready description for this Bitrix24 app from the positioning brief."

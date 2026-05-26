@@ -1,0 +1,4 @@
+interface:
+  display_name: "B24 LaunchKit"
+  short_description: "Orchestrate Bitrix24 app release and marketplace documentation."
+  default_prompt: "Prepare release or marketplace documentation for this Bitrix24 app using the LaunchKit workflow."
