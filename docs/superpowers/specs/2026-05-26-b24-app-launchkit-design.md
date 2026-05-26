@@ -9,12 +9,14 @@ The system is not only a marketplace card generator. It should help produce docu
 The first working version focuses on the most valuable path:
 
 ```text
-project/docs/old copy
+source material
   -> b24-manual
   -> b24-positioning
   -> b24-description
   -> b24-launchkit final review
 ```
+
+Source material can be a project repository, existing documentation, a manual draft, product notes, or an old marketplace description.
 
 ## Primary User
 

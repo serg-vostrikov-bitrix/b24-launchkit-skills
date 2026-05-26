@@ -14,12 +14,14 @@ The project is designed as a small documentation pipeline: start from project ev
 ## Workflow
 
 ```text
-project/docs/old copy
-  -> b24-manual
-  -> b24-positioning
-  -> b24-description
-  -> b24-launchkit final review
+source material
+  -> factual manual
+  -> positioning brief
+  -> marketplace description
+  -> final claim review
 ```
+
+Source material can be a project repository, existing documentation, a user manual draft, product notes, or an old marketplace description.
 
 Supported routes:
 
