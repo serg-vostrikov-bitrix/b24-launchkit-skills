@@ -135,7 +135,6 @@ This validates the skill folders and checks for unresolved draft markers. The va
 - Edit files under `skills/`, not under `~/.codex/skills`.
 - Keep `SKILL.md` concise and move only truly reusable details into bundled resources.
 - Do not let downstream skills invent product claims that were not supported by upstream facts.
-- Keep old general-purpose skills such as `user-manual-from-project` and `marketplace-card-optimizer` as references or fallback tools; this project owns the Bitrix24-specific launch pipeline.
 
 ## Contributing
 
