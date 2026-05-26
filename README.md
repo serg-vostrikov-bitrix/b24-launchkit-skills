@@ -160,3 +160,7 @@ Out of scope for the MVP:
 - Multi-marketplace formatting
 - Persistent artifact storage
 - UI or CLI orchestration beyond the install and validation scripts
+
+## License
+
+MIT. See [LICENSE](LICENSE).
