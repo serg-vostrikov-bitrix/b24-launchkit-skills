@@ -1,0 +1,4 @@
+interface:
+  display_name: "B24 Reviewer"
+  short_description: "Review Bitrix24 launch artifacts with finite criteria."
+  default_prompt: "Use $b24-reviewer to review this Bitrix24 LaunchKit artifact and give finite, artifact-specific recommendations."

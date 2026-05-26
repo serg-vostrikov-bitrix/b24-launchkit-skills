@@ -9,6 +9,7 @@ skills=(
   b24-manual
   b24-positioning
   b24-description
+  b24-reviewer
 )
 
 for skill in "${skills[@]}"; do

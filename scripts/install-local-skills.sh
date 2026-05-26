@@ -10,6 +10,7 @@ skills=(
   b24-manual
   b24-positioning
   b24-description
+  b24-reviewer
 )
 
 mkdir -p "$CODEX_SKILLS_DIR"

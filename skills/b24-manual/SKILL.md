@@ -1,6 +1,6 @@
 ---
 name: b24-manual
-description: Use when Codex needs to build a user-facing manual for a Bitrix24 application from a project, docs, old copy, UI routes, APIs, jobs, tests, or other implementation evidence before preparing release or marketplace materials.
+description: Use when user needs to build a user-facing manual for a Bitrix24 application from a project, docs, old copy, UI routes, APIs, jobs, tests, or other implementation evidence before preparing release or marketplace materials.
 ---
 
 # B24 Manual
@@ -35,7 +35,7 @@ This skill is the factual base for B24 App LaunchKit. Do not write marketplace c
 
 ## Recommended Output
 
-Use this structure by default. Merge sections for small apps.
+Use this structure by default. Merge sections for small apps. Translate all headings and subheadings into the requested output language; the English headings below are semantic placeholders, not literal text to copy.
 
 ```markdown
 # User Manual
@@ -55,7 +55,8 @@ Use this structure by default. Merge sections for small apps.
 
 ## Style Rules
 
-- Write in the user's language. If source materials are Russian or mixed Russian/English, use Russian unless the user asks otherwise.
+- Write in the user's language. If language of source materials is mixed, use English unless the user asks otherwise.
+- Write every visible structural label in the same language as the artifact: document title, headings, subheadings, table headers, scenario labels, status labels, and note labels.
 - Be concrete. Prefer "downloads an error report" over "provides observability".
 - Use short paragraphs, tables, and numbered scenario steps when useful.
 - Avoid class names, endpoint names, queue names, database names, and source paths unless they are visible to users.

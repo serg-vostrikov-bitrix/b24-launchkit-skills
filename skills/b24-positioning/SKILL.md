@@ -1,6 +1,6 @@
 ---
 name: b24-positioning
-description: Use when Codex needs to turn a Bitrix24 app manual, old marketplace text, or product notes into a positioning brief with target audience, user problem, business value, key scenarios, limits, do-not-claim guardrails, and search or FAQ intents.
+description: Use when user needs to turn a Bitrix24 app manual, old marketplace text, or product notes into a positioning brief with target audience, user problem, business value, key scenarios, limits, do-not-claim guardrails, and search or FAQ intents.
 ---
 
 # B24 Positioning
@@ -26,7 +26,7 @@ Do not inspect project code unless the user explicitly asks for a positioning br
 ## Workflow
 
 1. Read the manual and old copy.
-2. Identify the primary user and secondary users.
+2. Identify the primary audience: business type or company context when supported by the facts, plus primary and secondary human roles.
 3. State the main user problem in business language.
 4. Select the key scenarios that best explain the product's value.
 5. Extract direct business benefits from confirmed behavior.
@@ -38,13 +38,13 @@ Do not inspect project code unless the user explicitly asks for a positioning br
 
 ## Output Format
 
-Return only the brief.
+Return only the brief. Translate all headings and subheadings into the requested output language; the English headings below are semantic placeholders, not literal text to copy.
 
 ```markdown
 # Positioning Brief
 
 ## Target Audience
-<Primary and secondary users in human role language.>
+<Companies, teams, or business contexts that can recognize themselves in the marketplace description, plus primary and secondary human roles. If company traits cannot be inferred safely, say so briefly and focus on roles.>
 
 ## Primary User Problem
 <The main problem the app solves, without technical implementation noise.>
@@ -82,7 +82,11 @@ Return only the brief.
 ## Rules
 
 - Do not invent features, integrations, supported entities, formats, screens, metrics, triggers, or guarantees.
+- Treat Bitrix24 apps as B2B products: first try to identify what type of company, department, workflow scale, sales/service model, operational process, or business situation would recognize itself in the app's value.
+- Do not reduce target audience to job roles when the product facts imply a business context, for example companies with repeat client requests, distributed sales teams, field service workflows, document-heavy approvals, multichannel customer communication, or recurring data exchange.
+- Only infer company characteristics from confirmed functionality, entities, integrations, workflows, or stated use cases. If the source does not support a business segment, avoid naming one.
 - You may infer direct business consequences from confirmed behavior: less manual work, fewer duplicate entries, clearer control, faster response, or cleaner data.
 - If evidence is weak, either omit the claim or put it in `Do Not Claim`.
 - Keep the brief strategic and structured. Do not write final marketplace copy here.
-- Use the user's requested language. If not specified, follow the source language, with Russian as fallback for mixed Russian/English materials.
+- Use the user's requested language. If not specified, follow the source language, with English as fallback for mixed materials.
+- Write every visible structural label in the same language as the artifact: title, headings, subheadings, list labels, search-intent labels, FAQ labels, and guardrail labels.
