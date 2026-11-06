@@ -39,6 +39,7 @@ If the user provides only old text and asks for style cleanup, preserve the exis
    - fourth paragraph: requirements and limits as usage boundaries when important.
 5. Write three to five practical FAQ items from the user's likely doubts.
 6. Compare the result against `Do Not Claim` and remove any unsupported implication.
+7. Run the final check from `../b24-launchkit/references/writing-style.md`.
 
 ## Marketplace Description Output
 
@@ -62,6 +63,7 @@ Output only this marketplace description artifact. Do not add an introduction, r
 
 ## Style Rules
 
+- Apply the shared writing rules in `../b24-launchkit/references/writing-style.md` (banned words and phrases, AI staccato, sentence-case headings).
 - Write a little more persuasively than a dry manual, but avoid advertising exaggeration.
 - Write every visible structural label in the same language as the artifact: headline label, FAQ label, and question labels if used.
 - Start with user intent and business value, not APIs, fields, triggers, endpoints, or internal mechanics.
@@ -70,7 +72,7 @@ Output only this marketplace description artifact. Do not add an introduction, r
 - Write from the customer's point of view. Prefer "the administrator gets control", "the team can continue work", "data remains available" over "the app implements", "the module processes", or "we provide".
 - Convert feature lists into feature-to-benefit sentences. Explain why each important capability matters for the user, especially control, reports, mapping, and error handling.
 - Show the after-state early: what will appear in Bitrix24, what the user can verify, and how work continues after setup or migration.
-- Keep the tone like confident B2B product marketing: concrete, calm, useful, and slightly sales-oriented. Avoid hype, cute slogans, generic adjectives, and empty claims such as "powerful", "innovative", "seamless", "robust", or "unique" unless immediately made specific.
+- Keep the tone like confident B2B product marketing: concrete, calm, useful, and slightly sales-oriented. Avoid hype, cute slogans, generic adjectives, and empty claims unless immediately made specific.
 - Front-load the strongest practical reason to install. Put secondary implementation details later or in FAQ.
 - Keep sentences scannable. Break up long entity lists into meaning-based groups, and avoid one paragraph becoming a schema dump.
 - Use positive framing for limitations: describe fit and usage boundaries instead of leading with refusals.

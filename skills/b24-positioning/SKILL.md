@@ -88,5 +88,6 @@ Return only the brief. Translate all headings and subheadings into the requested
 - You may infer direct business consequences from confirmed behavior: less manual work, fewer duplicate entries, clearer control, faster response, or cleaner data.
 - If evidence is weak, either omit the claim or put it in `Do Not Claim`.
 - Keep the brief strategic and structured. Do not write final marketplace copy here.
+- Apply the shared writing rules in `../b24-launchkit/references/writing-style.md`.
 - Use the user's requested language. If not specified, follow the source language, with English as fallback for mixed materials.
 - Write every visible structural label in the same language as the artifact: title, headings, subheadings, list labels, search-intent labels, FAQ labels, and guardrail labels.

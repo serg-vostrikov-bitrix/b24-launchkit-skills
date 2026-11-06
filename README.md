@@ -96,6 +96,7 @@ This validates the skill folders and checks for unresolved draft markers. The va
 ## Development Notes
 
 - Keep `SKILL.md` concise and move only truly reusable details into bundled resources.
+- Writing-style rules shared by all skills live in `skills/b24-launchkit/references/writing-style.md` (adapted from `ai-writing-detox`, MIT). Link to that file instead of copying its rules into a skill.
 - Do not let downstream skills invent product claims that were not supported by upstream facts.
 
 ## Contributing

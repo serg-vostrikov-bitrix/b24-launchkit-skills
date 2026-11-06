@@ -37,6 +37,8 @@ Use the explicit `target_artifact_type` or `review_profile` from the user or orc
 
 Do not read or apply other profile files unless the user explicitly asks for separate reviews of multiple target artifacts.
 
+For the manual and marketplace description profiles, also read the shared writing rules in `../b24-launchkit/references/writing-style.md`. AI writing patterns are `Important` when they affect buyer trust in public text, otherwise `Optional Polish`; they are never `Blocking`. Report them within the five-finding limit, grouped into one finding when there are several.
+
 If the artifact type is unclear, infer it from the target artifact only. Ask only when the wrong profile would make the review misleading.
 
 ## Workflow

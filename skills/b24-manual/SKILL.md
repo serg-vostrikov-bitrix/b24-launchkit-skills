@@ -55,6 +55,7 @@ Use this structure by default. Merge sections for small apps. Translate all head
 
 ## Style Rules
 
+- Apply the shared writing rules in `../b24-launchkit/references/writing-style.md`.
 - Write in the user's language. If language of source materials is mixed, use English unless the user asks otherwise.
 - Write every visible structural label in the same language as the artifact: document title, headings, subheadings, table headers, scenario labels, status labels, and note labels.
 - Be concrete. Prefer "downloads an error report" over "provides observability".

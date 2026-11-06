@@ -25,6 +25,8 @@ The orchestrator must make each artifact visible before moving to the next one. 
 
 Do not browse the internet for marketplace rules, examples, or requirements unless the user explicitly asks for current external research. Use the skill instructions and provided project evidence as the source of truth.
 
+Shared writing rules for all artifacts live in `references/writing-style.md`. The producing skills and `b24-reviewer` read that file directly; when you write or revise artifact text yourself, apply it too.
+
 ## Intake Gate
 
 Before selecting a route, ask for any missing task controls. Keep the questions compact, but do not skip this gate for project-based work.
