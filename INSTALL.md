@@ -31,14 +31,13 @@ not flattened into a single file.
 ## Installation Rules
 
 1. Detect the current agent environment and its skills directory.
-2. Prefer copying skill directories for normal installation.
-3. Use symlinks only for local development from a persistent checkout.
-4. Preserve each skill directory exactly, including `SKILL.md`, `agents/`, and
+2. Copy the skill directories; do not use symlinks.
+3. Preserve each skill directory exactly, including `SKILL.md`, `agents/`, and
    `references/`.
-5. Do not edit, summarize, translate, or merge the skill contents during
+4. Do not edit, summarize, translate, or merge the skill contents during
    installation.
-6. Validate that every installed skill directory contains `SKILL.md`.
-7. Tell the user where the skills were installed and whether the agent needs a
+5. Validate that every installed skill directory contains `SKILL.md`.
+6. Tell the user where the skills were installed and whether the agent needs a
    restart or refresh.
 
 ## Known Targets
@@ -79,27 +78,6 @@ Do not guess a destructive or system-wide location.
    - bundled files such as `agents/` and `references/` are preserved when
      present.
 6. Report the result to the user.
-
-## Local Development Procedure
-
-If the user is working inside a persistent checkout of this repository, use the
-bundled installer:
-
-```bash
-scripts/install-local-skills.sh
-```
-
-For environments where symlinks are unsuitable, copy instead:
-
-```bash
-scripts/install-local-skills.sh copy
-```
-
-Then validate:
-
-```bash
-scripts/validate-skills.sh
-```
 
 ## Agent Prompt For Users
 

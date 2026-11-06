@@ -4,7 +4,7 @@ Agent skills for preparing release and marketplace documentation for Bitrix24 ap
 
 The project is designed as a small documentation pipeline: start from project evidence, existing docs, or old marketplace copy; produce a factual user manual; turn it into a positioning brief; write public marketplace-ready text; then review the result with finite, artifact-specific criteria.
 
-The orchestrator is intentionally strict: for project-based work it asks for task controls first, then runs the artifact stages through real subagents by default and produces visible artifacts in order. It does not skip straight to marketplace copy, generate multiple languages, browse for marketplace rules, or silently fall back to current-dialog execution unless the user explicitly asks for that route.
+The orchestrator is intentionally strict: it asks for task settings first, then produces each artifact in order. It does not skip straight to marketplace copy or generate multiple languages unless asked.
 
 ## Skills
 
@@ -53,10 +53,6 @@ Examples: `01-user-manual.ru.md`, `01-user-manual.en.md`, `02-positioning-brief.
 
 When multiple languages are requested, each language gets its own full artifact set.
 
-The orchestrator computes the exact artifact paths before launching subagents and passes those paths in each subagent prompt. Subagents must write only the requested artifact file and must read the upstream artifact file for the same language when a stage depends on previous output. The reviewer stage reads the same-language manual, positioning brief, and marketplace description before writing `04-final-claim-review.<lang>.md`.
-
-If subagent tooling is unavailable, the orchestrator must stop before artifact production and ask whether to continue in the current dialog as a fallback.
-
 ## Repository Layout
 
 ```text
@@ -67,16 +63,11 @@ skills/
   b24-description/
   b24-reviewer/
 scripts/
-  install-local-skills.sh
   validate-skills.sh
   quick-validate-skill.py
 ```
 
-The repository is the source of truth. The local Codex skills directory (`~/.codex/skills`) is only an install target for testing and real use.
-
-## Local Installation
-
-### Install With Your Agent
+## Installation
 
 Paste this into your coding agent:
 
@@ -92,34 +83,6 @@ for example:
 https://raw.githubusercontent.com/serg-vostrikov-bitrix/b24-launchkit-skills/v0.1.0/INSTALL.md
 ```
 
-### Install Locally For Codex
-
-Install the skills into Codex with symlinks:
-
-```bash
-scripts/install-local-skills.sh
-```
-
-If symlinks are not suitable in your environment, copy the skills instead:
-
-```bash
-scripts/install-local-skills.sh copy
-```
-
-By default, the installer targets:
-
-```text
-${CODEX_HOME:-$HOME/.codex}/skills
-```
-
-You can override the target directory:
-
-```bash
-CODEX_SKILLS_DIR=/path/to/skills scripts/install-local-skills.sh
-```
-
-After installation, restart or refresh Codex if the new skills do not appear in the current session.
-
 ## Validation
 
 Run:
@@ -132,8 +95,8 @@ This validates the skill folders and checks for unresolved draft markers. The va
 
 ## Development Notes
 
-- Edit files under `skills/`, not under `~/.codex/skills`.
 - Keep `SKILL.md` concise and move only truly reusable details into bundled resources.
+- Writing-style rules shared by all skills live in `skills/b24-launchkit/references/writing-style.md` (adapted from `ai-writing-detox`, MIT). Link to that file instead of copying its rules into a skill.
 - Do not let downstream skills invent product claims that were not supported by upstream facts.
 
 ## Contributing
@@ -158,7 +121,7 @@ Out of scope for the MVP:
 - Automated marketplace quality scoring
 - Multi-marketplace formatting
 - Persistent artifact storage
-- UI or CLI orchestration beyond the install and validation scripts
+- UI or CLI orchestration beyond the validation scripts
 
 ## License
 
